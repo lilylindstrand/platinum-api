@@ -1,9 +1,13 @@
 package dev.hepno.platinum_api.packet;
 
 import io.netty.buffer.ByteBuf;
+import lombok.AllArgsConstructor;
 import lombok.Getter;
+import lombok.NoArgsConstructor;
 
 @Getter
+@AllArgsConstructor
+@NoArgsConstructor
 public class PlayerFreeCoinPacket implements Packet {
     /*
     An example packet for a player pressing a "gain free coin" button, aka me being too lazy to implement a coordinate system

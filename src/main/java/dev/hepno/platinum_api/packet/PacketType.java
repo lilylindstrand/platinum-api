@@ -20,4 +20,12 @@ public enum PacketType {
         }
         throw new IllegalArgumentException("Unkown packet class: " + packet.getClass());
     }
+
+    public Packet createPacket() {
+        try {
+            return packetClass.getDeclaredConstructor().newInstance();
+        } catch (Exception exception) {
+            throw new RuntimeException("Failed to create packet instance for: " + packetClass.getName(), exception);
+        }
+    }
 }
