@@ -8,7 +8,7 @@ public class PlayerFreeCoinPacket implements Packet {
     /*
     An example packet for a player pressing a "gain free coin" button, aka me being too lazy to implement a coordinate system
     yet so im making an example packet using data I already have. coins should almost never be modified on the client side
-    so this is really dumb but its for the example
+    so this is really dumb but it's for the example
      */
 
     private int discordId; //TODO: Make this use session IDs with authentication
